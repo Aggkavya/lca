@@ -1,19 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import logo from '../assets/logo1.png'; // Ensure you have a logo image in the specified path
 const Navbar = () => {
 return (
 <nav className="bg-white text-black p-4 shadow-md">
 <div className="container mx-auto flex justify-between items-center">
-{/* Left section: Logo and Dashboard text */}
-<div className="flex items-center space-x-2">
-{/* Black background for the "LCA Dashboard" section */}
-<div className="bg-black p-2 rounded-lg flex items-center">
-<Link to="/" className="text-white text-2xl font-bold tracking-wide">
-LCA
-</Link>
+{/* Left section: Logo */}
+<div className="flex items-center">
+  <Link to="/">
+    <img 
+      src={logo} 
+      alt="Logo" 
+      className="h-12 w-auto" 
+    />
+  </Link>
 </div>
-</div>
+
 
 {/* Middle section: Navigation links */}
 <ul className="flex space-x-8 text-lg">

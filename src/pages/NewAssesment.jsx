@@ -3,14 +3,15 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
+
 function NewAssessment() {
     const navigate = useNavigate();
     const [selectedFile, setSelectedFile] = useState(null);
 
     const handleDownloadTemplate = () => {
         const link = document.createElement('a');
-        link.href = '/templates/lca-template.csv';
-        link.download = 'lca-template.csv';
+        link.href = '../assets/csv-template/sample-lca-input.csv';
+        link.download = 'lca-template-sample-data.csv';
         link.click();
     };
 
@@ -70,6 +71,9 @@ function NewAssessment() {
                     </div>
 
                     <div className="text-center mt-8">
+                        <h1 className = "text-lg text-gray-700 text-center mb-6">
+                        Start your assessment
+                        </h1>
                         <button
                             onClick={() => navigate("/assessment-output")}
                             className="w-full bg-green-600 text-white text-lg py-3 rounded-full hover:bg-green-700 transition duration-300 font-medium"

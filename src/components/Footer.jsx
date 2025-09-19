@@ -5,10 +5,10 @@ function Footer(){
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
         {/* Company Info */}
-        <div>
+        <div >
           <h2 className="text-lg font-bold mb-3">Mining Project</h2>
-          <p className="text-sm text-gray-400">
-            Sustainable mining with global standards and safety practices.
+          <p className="text-sm  text-gray-400">
+            Leading the way in sustainable mining solutions and environmental stewardship.
           </p>
         </div>
 
@@ -42,11 +42,11 @@ function Footer(){
       </div>
     </footer>
 
-    <div className="bg-gray-100">
+    {/* <div className="bg-gray-100">
                 <div className="text-center p-4 text-gray-600">
                     Metals Mining Operations © 2024
                 </div>
-            </div>
+            </div> */}
     </>)
     
 }

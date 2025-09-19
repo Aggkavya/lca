@@ -1,0 +1,11 @@
+record_type,scenario_id,scenario_name,functional_unit,functional_unit_base,system_boundary,geography,year,lcia_method,allocation_method,currency,units_system,author_notes,process_id,process_name,process_type,technology,location,functional_unit_multiplier,plant_capacity_tpa,plant_efficiency,operational_hours_per_year,labour_hours_per_FU,labour_cost_per_hour,capex_annuity_per_FU,opex_per_FU,data_source,confidence_score,notes,flow_id,flow_name,direction,quantity,unit,flow_category,substance,transport_mode,transport_distance_km,recycled_content_pct,scrap_quality,allocation_share,measurement_type
+SCENARIO_META,al-plant-x-2025-01,Al Sheet — Baseline (Plant A),1 kg Al sheet,kg,cradle-to-gate,IN-OR,2025,IPCC2013_GWP100a,recycled_content,INR,SI,Initial LCA scenario for Plant A,,,,,,,,,,,,,,,,,,,,,,,,,
+PROCESS,p_mine_01,Bauxite Mining - Plant A,mining,Open-pit,IN-OR,1,200000,0.90,8000,0.1,10,0.3,0.5,Plant Survey 2025,0.9,,
+PROCESS,p_smelt_01,Primary Smelting - Plant A,smelting,Hall-Héroult,IN-OR,1,150000,0.92,8000,0.05,10,0.2,0.5,Plant Survey 2025,0.9,,
+PROCESS,p_cast_01,Casting & Rolling - Plant A,casting,Continuous Casting,IN-OR,1,100000,0.88,8000,0.03,10,0.1,0.3,Plant Survey 2025,0.9,,
+FLOW,f_baux_01,p_mine_01,Bauxite Ore,input,2.5,kg,material,,,,,,,,,measured
+FLOW,f_elec_01,p_smelt_01,Electricity - Grid,input,14.361,kWh,energy,,,,,,,,,measured
+FLOW,f_fuel_01,p_smelt_01,Fuel - Natural Gas,input,3.2,MJ,energy,,,,,,,,,measured
+FLOW,f_al_out_01,p_cast_01,Al Sheet,output,1,kg,material,,,,,,,,,measured
+FLOW,f_co2_01,p_smelt_01,CO2 (Stack),emission,1.1,kg,emission,CO2,,,,,,,measured
+FLOW,f_slag_01,p_smelt_01,Slag,waste,0.3,kg,waste,,,,,,,measured

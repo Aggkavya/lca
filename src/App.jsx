@@ -5,6 +5,7 @@ import Dashboard from './pages/DashBoard';
 import NewAssessment from './pages/NewAssesment';
 import AssessmentOutput from './pages/AssessmentOutput';
 import ContactUdPage from './pages/ContactUsPage';
+import DocumentationPAge from './pages/DocumentationPage'
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/new-assessment" element={<NewAssessment />} />
         <Route path="/assessment-output" element={<AssessmentOutput />} />
         <Route path="/contact-us" element={<ContactUdPage />} />
+        <Route path="/documentation" element={<DocumentationPAge/>}/>
         
       </Routes>
     </Router>
